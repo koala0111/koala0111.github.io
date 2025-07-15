@@ -10,7 +10,5 @@ DISP_TOTAL_SELL = 0
 # Trade option
 OP_TRADE_LIST_SIZE = 50     #거래 종목 수. 예) 거래대금 상위 50위
 
-access = 'uuLpRAmcHmet4TlRxGEMjEy3xkKBsIH5upPYT6sM'
-secret = 'eAGMbKglAfBWTJd0hbmUDTCWWKpbxhiR4oHkKGN6'
 # 제외할 코인 목록
 EXCLUDED_COINS = {"don", "apenft", "solo", "icz", "xcore", "pepper", "sbd", "hifi"}
