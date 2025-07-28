@@ -1,4 +1,4 @@
-OP_PRINT_DEBUG = 0	# Option for debug and analyze
+OP_PRINT_DEBUG = 1	# Option for debug and analyze
 OP_SAVE_FILE_TRADE_RECORD = 1
 
 # 거래 횟수
