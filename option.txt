@@ -16,5 +16,3 @@ OP_IS_REBUY = 1
 OP_REBUY_PERCENTAGE = -8                  # 재매수 비율(%), -8이면 수익률이 -8% 이상 떨어지면 재매수 함
 
 G_Trade_List_Except = {"DON", "APENFT", "SOLO", "ICZ", "XCORE", "PEPPER", "SBD", "HIFI"} #대문자로 입력해야함
-
-Test_value=1
