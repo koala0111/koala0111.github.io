@@ -5,8 +5,8 @@ OP_PRINT_DETAIL = 1                     # 계산 과정 상세 표시
 OP_SAVE_FILE_TRADE_RECORD = 1           # 거래 내용을 엑셀에 저장
 
 # 거래 ON/OFF 옵션
-OP_IS_BUY = 0
-OP_IS_SELL = 0
+OP_IS_BUY = 1
+OP_IS_SELL = 1
 # List Update, Trade option
 OP_TRADE_LIST_SIZE = 60     #거래 종목 수 
 buy_total_KRW = 100000                              # 1회 매수 금액
