@@ -18,4 +18,4 @@ OP_REBUY_MULTIPLIER = 2              # 재매수 시 가격 증가 배수(예: 2
 
 
 
-G_Trade_List_Except = {"DON", "APENFT", "SOLO", "ICZ", "XCORE", "PEPPER", "SBD", "HIFI", "UXLINK","UXLINK", "ZKC"} #대문자로 입력해야함
+G_Trade_List_Except = {"DON", "APENFT", "SOLO", "ICZ", "XCORE", "PEPPER", "SBD", "HIFI", "UXLINK","ZKC"} #대문자로 입력해야함
