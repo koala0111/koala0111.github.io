@@ -9,12 +9,12 @@ OP_IS_BUY = 1
 OP_IS_SELL = 1
 # List Update, Trade option
 OP_TRADE_LIST_SIZE = 30     #거래 종목 수 
-buy_total_KRW = 200000                              # 1회 매수 금액
+buy_total_KRW = 100000                              # 1회 매수 금액
 
 # 재매수 옵션
 OP_IS_REBUY = 1                         # 재매수 수행 여부
 OP_REBUY_PERCENTAGE = -7                # 재매수 비율(%), -8이면 수익률이 -8% 이상 떨어지면 재매수 함
-OP_REBUY_MULTIPLIER = 2              # 재매수 시 가격 증가 배수(예: 2.5배) 예) buy_total_KRW의 1배수를 매수함
+OP_REBUY_MULTIPLIER = 3              # 재매수 시 가격 증가 배수(예: 2.5배) 예) buy_total_KRW의 1배수를 매수함
 
 
 
