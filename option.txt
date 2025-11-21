@@ -27,5 +27,5 @@ OP_REBUY_MULTIPLIER = 3              # 재매수 시 가격 증가 배수(예: 2
 
 G_Trade_List_Except = ["DON", "APENFT", "SOLO", "ICZ", "XCORE", "PEPPER", "SBD", "HIFI"]        # 대문자로 입력해야함
 G_Trade_List_Except_Buy = ["DON", "APENFT", "SOLO", "ICZ", "XCORE", "PEPPER", "SBD", "HIFI"]    # 매수 금지 코인 리스트 (의도적으로 매수 안할 코인)
-G_Trade_List_Except_Sell = ["BTC"]                                                              # 매도 금지 코인 리스트 (계속 보유)
+G_Trade_List_Except_Sell = []                                                              # 매도 금지 코인 리스트 (계속 보유)
 G_Trade_List_Except_Account = ["APENFT", "DON", "HIFI", "ICZ","PEPPER","SBD","SOLO","XCORE"]    # 계좌에서 무시 할 코인 리스트 (거래 지원 X)
