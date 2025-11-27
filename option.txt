@@ -1,14 +1,15 @@
 ############## Option From File
 # Timer 각 쓰레드의 타임을 설정 (초)
-OP_THREAD_TIMER_LOADOPTION = 10
-OP_THREAD_TIMER_ACCOUNT = 1
+OP_THREAD_TIMER_LOADOPTION = 60
+OP_THREAD_TIMER_ACCOUNT = 5
 OP_THREAD_TIMER_LIST_UPDATE = 10
-OP_THREAD_TIMER_SELL = 1
-OP_THREAD_TIMER_BUY = 1
+OP_THREAD_TIMER_SELL = 5
+OP_THREAD_TIMER_BUY = 5
 
 # Option for debug and analyze
 OP_PRINT_DEBUG = 0                      # 알고리즘 확인용, 계산 과정을 표시 함
-OP_PRINT_DETAIL = 1                     # 계산 과정 상세 표시
+OP_PRINT_DETAIL = 0                     # 계산 과정 상세 표시
+OP_PRINT_PROGRAM_DEBUG = 0              # 프로그램 디버깅용 표시
 OP_SAVE_FILE_TRADE_RECORD = 1           # 거래 내용을 엑셀에 저장
 
 # 거래 ON/OFF 옵션
@@ -18,19 +19,16 @@ OP_IS_SELL = 1
 OP_TRADE_LIST_SIZE = 30     #거래 종목 수 
 buy_total_KRW = 100000                              # 1회 매수 금액
 
+
 # 재매수 옵션
 OP_IS_REBUY = 1                         # 재매수 수행 여부
 OP_REBUY_PERCENTAGE = -8                # 재매수 비율(%), -8이면 수익률이 -8% 이상 떨어지면 재매수 함
-OP_REBUY_MULTIPLIER = 3              # 재매수 시 가격 증가 배수(예: 2.5배) 예) buy_total_KRW의 1배수를 매수함
+OP_REBUY_MULTIPLIER = 1              # 재매수 시 가격 증가 배수(예: 2.5배) 예) buy_total_KRW의 1배수를 매수함
 
 
 # "KRW-" 안붙은 상태로 입력 해야 함.
 G_Trade_List_Except = ["DON", "APENFT", "SOLO", "ICZ", "XCORE", "PEPPER", "SBD", "HIFI"]        # 대문자로 입력해야함
 G_Trade_List_Except_Buy = []    # 매수 금지 코인 리스트 (의도적으로 매수 안할 코인)
-G_Trade_List_Except_Sell = []                                                              # 매도 금지 코인 리스트 (계속 보유)
+G_Trade_List_Except_Sell = ["BTC"]                                                              # 매도 금지 코인 리스트 (계속 보유)
 G_Trade_List_Except_Account = ["APENFT", "DON", "HIFI", "ICZ","PEPPER","SBD","SOLO","XCORE"]    # 계좌에서 무시 할 코인 리스트 (거래 지원 X)
-
-
-# G_Trade_List_Except = [coin.upper() for coin in G_Trade_List_Except]    # 대문자로 변환, 실수 입력을 위한 대비임
-# G_Trade_List_Except_KRW = ['KRW-' + coin for coin in G_Trade_List_Except]                  # "KRW-" 추가
 ############## Option From File - END
