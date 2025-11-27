@@ -7,9 +7,9 @@ OP_THREAD_TIMER_SELL = 5
 OP_THREAD_TIMER_BUY = 5
 
 # Option for debug and analyze
-OP_PRINT_DEBUG = 0                      # 알고리즘 확인용, 계산 과정을 표시 함
-OP_PRINT_DETAIL = 0                     # 계산 과정 상세 표시
-OP_PRINT_PROGRAM_DEBUG = 0              # 프로그램 디버깅용 표시
+OP_PRINT_DEBUG = 1                      # 알고리즘 확인용, 계산 과정을 표시 함
+OP_PRINT_DETAIL = 1                     # 계산 과정 상세 표시
+OP_PRINT_PROGRAM_DEBUG = 1              # 프로그램 디버깅용 표시
 OP_SAVE_FILE_TRADE_RECORD = 1           # 거래 내용을 엑셀에 저장
 
 # 거래 ON/OFF 옵션
