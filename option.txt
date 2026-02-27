@@ -34,7 +34,7 @@ OP_REBUY_MULTIPLIER = 3              # 재매수 시 가격 증가 배수(예: 2
 
 # "KRW-" 안붙은 상태로 입력 해야 함.
 G_Trade_List_Except = ["DON", "APENFT", "SOLO", "ICZ", "XCORE", "PEPPER", "SBD", "HIFI"]        # 대문자로 입력해야함
-G_Trade_List_Except_Buy = ["XRP","GRS","RLY", "SXP","G","FLOW","ID","SONIC","ZKP","STG","IP","MON","KAITO","MINA","MOCA","BTT"]    # 매수 금지 코인 리스트 (의도적으로 매수 안할 코인)  ["BTC","ETH"]
+G_Trade_List_Except_Buy = ["XRP","ETH", "BTC","GRS","RLY", "SXP","G","FLOW","ID","SONIC","ZKP","STG","IP","MON","KAITO","MINA","MOCA","BTT"]    # 매수 금지 코인 리스트 (의도적으로 매수 안할 코인)  ["BTC","ETH"]
 G_Trade_List_Except_Sell = ["BTC", "XRP", "ETH"]                                                              # 매도 금지 코인 리스트 (계속 보유) ["BTC", "XRP", "ETH"]
 G_Trade_List_Except_Account = ["APENFT", "DON", "HIFI", "ICZ","PEPPER","SBD","SOLO","XCORE"]    # 계좌에서 무시 할 코인 리스트 (거래 지원 X)
 ############## Option From File - END
