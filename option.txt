@@ -19,7 +19,7 @@ OP_IS_SELL = 1
 OP_TRADE_LIST_SIZE = 30     #거래 종목 수 
 
 
-OP_CHART_INTERVAL = '5m'    # 매매에 사용될 차트의 종류(봉) 3m 5m 60m 1d 등등
+OP_CHART_INTERVAL = '10m'    # 매매에 사용될 차트의 종류(봉) 3m 5m 60m 1d 등등
 
 # BUY
 buy_total_KRW = 100000                              # 1회 매수 금액
