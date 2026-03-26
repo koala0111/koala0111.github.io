@@ -30,7 +30,7 @@ buy_total_KRW = 10000                              # 1회 매수 금액
 OP_BUY_PRICE_LIMIT_RATE = 20 #매수가격 제한. 20이면 최근 24시간 가격폭에서 하위 20% 이하일 경우만 매수함
 
 # Sell
-rate_stop_loss = -10.0    # 손절 기준(%)
+rate_stop_loss = -7.0    # 손절 기준(%)
 rate_take_profit = 3.0    # 익절 기준(%)
 
 
