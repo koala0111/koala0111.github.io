@@ -21,8 +21,20 @@ OP_IS_SELL = 1
 OP_TRADE_LIST_SIZE = 30     #거래 종목 수 
 
 
-OP_CHART_INTERVAL = '5m'    # 매매에 사용될 차트의 종류(봉) 3m 5m 60m 1d 등등
+OP_CHART_INTERVAL = 'minute5'    # 매매에 사용될 차트의 종류(봉) 3m 5m 60m 1d 등등
 TotalLoadData = 200                                  # 차트를 읽어올 총 데이터 수
+
+#minute1    → 1분봉
+#minute3    → 3분봉
+#minute5    → 5분봉
+#minute10   → 10분봉
+#minute15   → 15분봉
+#minute30   → 30분봉
+#minute60   → 60분봉 (1시간봉)
+#minute240  → 240분봉 (4시간봉)
+#day    → 일봉
+#week   → 주봉
+#month  → 월봉
 
 
 # BUY
