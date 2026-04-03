@@ -22,6 +22,7 @@ OP_TRADE_LIST_SIZE = 30     #거래 종목 수
 
 
 OP_CHART_INTERVAL = 'minute5'    # 매매에 사용될 차트의 종류(봉)
+OP_CHART_DATA = 200
 TotalLoadData = 200                                  # 차트를 읽어올 총 데이터 수
 
 #minute1    → 1분봉
