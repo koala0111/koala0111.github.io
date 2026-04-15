@@ -45,7 +45,7 @@ OP_BUY_LIMIT_VARIABILITY_RATE = 5 #매수 제한, 3일간 변동이 5% 이상
 
 # Sell
 OP_SELL_STOP_LOSS_RATE = -7.0    # 손절 기준(%)
-OP_SELL_STOP_TAKE_RATE = 3.0    # 익절 기준(%)
+OP_SELL_STOP_TAKE_RATE = 2.0    # 익절 기준(%)
 
 
 # Rebuy 재매수 옵션
