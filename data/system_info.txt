@@ -1,9 +1,9 @@
 HOST   :GR-RD10-NA104F4
 
 Account:06-23 01:47:06
-Buy    :06-23 01:56:12
+Buy    :06-23 02:06:21
 Sell   :06-23 01:46:51
-List   :06-23 01:56:25
+List   :06-23 02:06:30
 
 ACCOUNT: {
     "BTC": 97301000,
@@ -30,7 +30,7 @@ BUY: {
     "FuncName": "GoldenCross",
     "Rebuy(수/%/X)": "3/-7%/3",
     "Rebuy(count)": 103,
-    "Update Time": "06-23 01:56:12"
+    "Update Time": "06-23 02:06:21"
 }
 SELL: {
     "보유종목": 22,
