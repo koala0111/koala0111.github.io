@@ -1,4 +1,3 @@
-###############################################################################################################################################################
 ############## Option From File
 
 # Timer 각 쓰레드의 타임을 설정 (초)
@@ -12,18 +11,20 @@ OP_THREAD_TIMER_BUY = 10
 OP_PRINT_DEBUG = 0                      # 알고리즘 확인용, 계산 과정을 표시 함
 OP_PRINT_DETAIL = 0                     # 계산 과정 상세 표시
 OP_PRINT_PROGRAM_DEBUG = 0              # 프로그램 디버깅용 표시
+OP_PRINT_ERROR = 0
 OP_SAVE_FILE_TRADE_RECORD = 1           # 거래 내용을 엑셀에 저장
 
 # 거래 ON/OFF 옵션
 OP_IS_BUY = 1
 OP_IS_SELL = 1
+OP_IS_REBUY = 1                         # 재매수 수행 여부
+
 # List Update, Trade option
 OP_TRADE_LIST_SIZE = 30     #거래 종목 수 
 
 
 OP_CHART_INTERVAL = 'minute5'    # 매매에 사용될 차트의 종류(봉)
-OP_CHART_DATA = 200
-TotalLoadData = 200                                  # 차트를 읽어올 총 데이터 수
+OP_CHART_DATA = 200                                  # 차트를 읽어올 총 데이터 수
 
 #minute1    → 1분봉
 #minute3    → 3분봉
@@ -39,26 +40,27 @@ TotalLoadData = 200                                  # 차트를 읽어올 총 �
 
 
 # BUY
-buy_total_KRW = 50000                              # 1회 매수 금액
+OP_BUY_TOTAL_KRW = 10000                              # 1회 매수 금액
 OP_BUY_LIMIT_LOW_PRICE_RATE = 30 #매수가격 제한. 20이면 최근 3일 가격폭에서 하위 20% 이하일 경우만 매수함
 OP_BUY_LIMIT_VARIABILITY_RATE = 5 #매수 제한, 3일간 변동이 5% 이상
+OP_BUY_FUNC = 0                     # 사용할 매수 알고리즘 선택, 0: 단순 매수, 1: 저점 반등 매수, 2: 저점 반등 매수 + 장기 상승 추세 확인, 3: 저점 반등 매수 + 장기 상승 추세 확인 + 단기 상승 추세 확인
 
 # Sell
 OP_SELL_STOP_LOSS_RATE = -10.0    # 손절 기준(%)
 OP_SELL_STOP_TAKE_RATE = 5.0    # 익절 기준(%)
+OP_SELL_FUNC = 0                     # 사용할 매도 알고리즘 선택, 0: 단순 매도, 1: 손절/익절 매도, 2: 손절/익절 + 장기 하락 추세 확인, 3: 손절/익절 + 장기 하락 추세 확인 + 단기 하락 추세 확인
 
 
 # Rebuy 재매수 옵션
-OP_IS_REBUY = 0                         # 재매수 수행 여부
 OP_REBUY_PERCENTAGE = -7                # 재매수 비율(%), -8이면 수익률이 -8% 이상 떨어지면 재매수 함
-OP_REBUY_MULTIPLIER = 3              # 재매수 시 가격 증가 배수(예: 2.5배) 예) buy_total_KRW의 1배수를 매수함
+OP_REBUY_MULTIPLIER = 3              # 재매수 시 가격 증가 배수(예: 2.5배) 예) OP_BUY_TOTAL_KRW의 1배수를 매수함
 OP_REBUY_LIMIT_COUNT = 10              # 재매수 제한 횟수 (예: (1회 매수 금액 1만원), 10이면 재매수 3만원씩 10번. 총금액은 1만원 + 3만원*10 = 31만원
 
 
 # "KRW-" 안붙은 상태로 입력 해야 함.
-G_Trade_List_Except = ["DON", "APENFT", "SOLO", "ICZ", "XCORE", "PEPPER", "SBD", "HIFI"]        # 대문자로 입력해야함
-G_Trade_List_Except_Buy = ["AQT","G","ID","SONIC","ZKP","STG","IP","MON","KAITO","MINA","MOCA","BTT"]    # 매수 금지 코인 리스트 (의도적으로 매수 안할 코인)  ["BTC","ETH"]
-G_Trade_List_Except_Sell = ["BTC", "XRP", "ETH"]                                                              # 매도 금지 코인 리스트 (계속 보유) ["BTC", "XRP", "ETH"]
-G_Trade_List_Except_Account = ["APENFT", "DON", "HIFI", "ICZ","PEPPER","SBD","SOLO","XCORE"]    # 계좌에서 무시 할 코인 리스트 (거래 지원 X)
-############## Option From File - END
-###############################################################################################################################################################
+# 매수 금지 코인 리스트 (의도적으로 매수 안할 코인)  ["BTC","ETH"]
+G_Trade_List_Except_Buy = ["BTT"]
+# 매도 금지 코인 리스트 (계속 보유) ["BTC", "XRP", "ETH"]
+G_Trade_List_Except_Sell = ["BTC", "XRP", "ETH"]
+G_Trade_List_Except_Account = ["APENFT", "DON", "HIFI", "PEPPER","SBD","SOLO","XCORE"]    # 계좌에서 무시 할 코인 리스트 (거래 지원 X)
+
