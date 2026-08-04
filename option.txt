@@ -42,7 +42,7 @@ OP_CHART_DATA = 200                                  # 차트를 읽어올 총 �
 
 
 # BUY
-OP_BUY_TOTAL_KRW = 10000                # 1회 매수 금액
+OP_BUY_TOTAL_KRW = 100000                # 1회 매수 금액
 OP_BUY_LIMIT_LOW_PRICE_RATE = 30        #매수가격 제한. 20이면 최근 3일 가격폭에서 하위 20% 이하일 경우만 매수함
 OP_BUY_LIMIT_VARIABILITY_RATE = 5       #매수 제한, 3일간 변동이 5% 이상
 OP_BUY_FUNC = 0                         # 사용할 매수 알고리즘 선택, 0: 단순 매수, 1: 저점 반등 매수, 2: 저점 반등 매수 + 장기 상승 추세 확인, 3: 저점 반등 매수 + 장기 상승 추세 확인 + 단기 상승 추세 확인
