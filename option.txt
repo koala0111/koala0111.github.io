@@ -20,7 +20,7 @@ OP_IS_SELL = 1
 OP_IS_REBUY = 1                         # 재매수 수행 여부
 
 # List Update, Trade option
-OP_TRADE_LIST_SIZE = 30     #거래 종목 수 
+OP_TRADE_LIST_SIZE = 50     #거래 종목 수 
 
 
 OP_CHART_INTERVAL = 'minute5'    # 매매에 사용될 차트의 종류(봉)
