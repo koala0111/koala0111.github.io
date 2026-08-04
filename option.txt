@@ -12,6 +12,8 @@ OP_PRINT_DEBUG = 0                      # 알고리즘 확인용, 계산 과정�
 OP_PRINT_DETAIL = 0                     # 계산 과정 상세 표시
 OP_PRINT_PROGRAM_DEBUG = 0              # 프로그램 디버깅용 표시
 OP_PRINT_ERROR = 0
+
+
 OP_SAVE_FILE_TRADE_RECORD = 1           # 거래 내용을 엑셀에 저장
 
 # 거래 ON/OFF 옵션
@@ -20,7 +22,7 @@ OP_IS_SELL = 1
 OP_IS_REBUY = 1                         # 재매수 수행 여부
 
 # List Update, Trade option
-OP_TRADE_LIST_SIZE = 50     #거래 종목 수 
+OP_TRADE_LIST_SIZE = 30     #거래 종목 수 
 
 
 OP_CHART_INTERVAL = 'minute5'    # 매매에 사용될 차트의 종류(봉)
@@ -40,10 +42,14 @@ OP_CHART_DATA = 200                                  # 차트를 읽어올 총 �
 
 
 # BUY
-OP_BUY_TOTAL_KRW = 100000                              # 1회 매수 금액
-OP_BUY_LIMIT_LOW_PRICE_RATE = 30 #매수가격 제한. 20이면 최근 3일 가격폭에서 하위 20% 이하일 경우만 매수함
-OP_BUY_LIMIT_VARIABILITY_RATE = 5 #매수 제한, 3일간 변동이 5% 이상
-OP_BUY_FUNC = 0                     # 사용할 매수 알고리즘 선택, 0: 단순 매수, 1: 저점 반등 매수, 2: 저점 반등 매수 + 장기 상승 추세 확인, 3: 저점 반등 매수 + 장기 상승 추세 확인 + 단기 상승 추세 확인
+OP_BUY_TOTAL_KRW = 10000                # 1회 매수 금액
+OP_BUY_LIMIT_LOW_PRICE_RATE = 30        #매수가격 제한. 20이면 최근 3일 가격폭에서 하위 20% 이하일 경우만 매수함
+OP_BUY_LIMIT_VARIABILITY_RATE = 5       #매수 제한, 3일간 변동이 5% 이상
+OP_BUY_FUNC = 0                         # 사용할 매수 알고리즘 선택, 0: 단순 매수, 1: 저점 반등 매수, 2: 저점 반등 매수 + 장기 상승 추세 확인, 3: 저점 반등 매수 + 장기 상승 추세 확인 + 단기 상승 추세 확인
+OP_BUY_CHART_LONG_INTERVAL = "day"      #장기 추세 확인용 차트 봉 종류
+OP_BUY_CHART_LONG_DATA = 200            #장기 추세 확인용 차트 데이터 수
+OP_BUY_CHART_SHORT_INTERVAL = "minute5" #단기 추세 확인용 차트 봉 종류
+OP_BUY_CHART_SHORT_DATA = 200           #단기 추세 확인용 차트 데이터 수
 
 # Sell
 OP_SELL_STOP_LOSS_RATE = -10.0    # 손절 기준(%)
@@ -63,4 +69,3 @@ G_Trade_List_Except_Buy = ["BTT"]
 # 매도 금지 코인 리스트 (계속 보유) ["BTC", "XRP", "ETH"]
 G_Trade_List_Except_Sell = ["BTC", "XRP", "ETH"]
 G_Trade_List_Except_Account = ["APENFT", "DON", "HIFI", "PEPPER","SBD","SOLO","XCORE"]    # 계좌에서 무시 할 코인 리스트 (거래 지원 X)
-
