@@ -4,7 +4,7 @@
 OP_THREAD_TIMER_LOADOPTION = 3
 OP_THREAD_TIMER_ACCOUNT = 1
 OP_THREAD_TIMER_LIST_UPDATE = 600
-OP_THREAD_TIMER_SELL = 600
+OP_THREAD_TIMER_SELL = 1
 OP_THREAD_TIMER_BUY = 600
 
 # Option for debug and analyze
@@ -18,7 +18,7 @@ OP_SAVE_FILE_TRADE_RECORD = 1           # 거래 내용을 엑셀에 저장
 
 # 거래 ON/OFF 옵션
 OP_IS_BUY = 0
-OP_IS_SELL = 0
+OP_IS_SELL = 1
 OP_IS_REBUY = 0                         # 재매수 수행 여부
 
 # List Update, Trade option
