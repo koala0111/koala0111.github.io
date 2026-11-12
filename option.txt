@@ -61,6 +61,8 @@ OP_SELL_FUNC = 0                     # 사용할 매도 알고리즘 선택, 0: 
 OP_REBUY_PERCENTAGE = -7                # 재매수 비율(%), -8이면 수익률이 -8% 이상 떨어지면 재매수 함
 OP_REBUY_MULTIPLIER = 3              # 재매수 시 가격 증가 배수(예: 2.5배) 예) OP_BUY_TOTAL_KRW의 1배수를 매수함
 OP_REBUY_LIMIT_COUNT = 10              # 재매수 제한 횟수 (예: (1회 매수 금액 1만원), 10이면 재매수 3만원씩 10번. 총금액은 1만원 + 3만원*10 = 31만원
+OP_REBUY_LIMIT_KRW = 1000000        # 1종목당 최대 매수 금액(원)
+
 
 
 # "KRW-" 안붙은 상태로 입력 해야 함.
